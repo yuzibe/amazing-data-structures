@@ -1,0 +1,18 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.Font?>
+<GridPane fx:id="gridPane" fx:controller="at.svvx.controller.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+
+    <TextField fx:id="inputSearch"
+               GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+    <ListView fx:id="matchListView" prefHeight="200" prefWidth="200" GridPane.columnIndex="0" GridPane.rowIndex="1" visible="false"/>
+
+    <Button fx:id="btnSearch" text="搜索" onAction="#btnSearchClick" GridPane.columnIndex="1"
+            GridPane.rowIndex="0"/>
+
+</GridPane>
